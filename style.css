@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Annie Use Your Telescope', cursive;
+  color: white;
+}
+body {
+  font-family: 'Annie Use Your Telescope', cursive;
+  color: white;
+/*   font-family: 'Sue Ellen Francisco', cursive; */
+  font-size: 2em;
+}
+main.container {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  background-color: #53777A;
+
+}
+section.cat-thumbnails {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100px;
+  height: inherit;
+/*     background-color: #ff0055; */
+}
+ul#cat-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 200%;
+  transform: translateX(-50%);
+}
+ul li {
+  position: relative;
+  width: 100%;
+  height: 75px;
+  margin-bottom: 2px;
+  border-bottom: 3px solid #342437;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 29.25px;
+  background: #542437;
+  cursor: pointer;
+}
+.cat-thumbnails li:hover {
+/*   background-color: yellow; */
+  transform: translateX(50%);
+  transition: all ease 0.4s;
+}
+li .small-img {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  width: 70px;
+  height: 60px;
+  border-radius: 5px;
+}
+section.cat-viewer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+/*   background-color: hotpink; */
+}
+.cat-img {
+  width: 450px;
+  height: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.smaller-img {
+  width: 300px;
+  height: 200px;
+}
+
+
+#add-cat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 400px;
+  margin-top: 10px;
+  transition: opacity 1s ease;
+}
+#add-cat input {
+  width: 70%;
+  padding-left: 10px;
+  color: #000;
+  font-weight: 700;
+  font-size: 0.7em;
+  outline: none;
+  background-color: #F0F0D8;
+  border: solid 2px #41403E;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+#add-cat label {
+  width: 30%;
+}
+
+button {
+  border: solid 2px #41403E;
+  background-color: #C02942;
+  padding: 10px;
+  transition: all .5s ease;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+button:hover {
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+}
+
+button[type='submit'] {
+  margin-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 0.6em;
+  background-color: #F56991;
+  color: #fff;
+  font-weight: 700;
+}
